@@ -1,0 +1,274 @@
+main{
+	padding-top: 88px;
+	padding-bottom: 120px;
+}
+#intro{
+	.container{
+		.thumbnail{
+			text-align: center;
+			margin: 0 auto 48px auto;
+		}
+	}
+	@media (min-width: 992px){
+		.container{
+			width: 60%;
+		}
+	}
+}
+
+#process{
+	.card{
+		@include border-radius(0px);
+		box-shadow: none;
+		color: #4a4a4a;
+		text-align: center;
+		img{
+			/*width: 72px;
+			height: 72px;*/
+			margin: 0 auto;
+		}
+		.card-title{
+			font-size: 24px;
+			font-weight: 500;
+			text-align: center;
+		}
+		.card-text{
+			font-size: 16px;
+		}
+	}
+	
+}
+
+.descriptions{
+	.title{
+		font-size: 32px;
+  		font-weight: 500;
+  		text-align: center;
+  		color: #4a4a4a;
+  		margin-bottom: 64px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 1.88;
+		text-align: left;
+		color: #4a4a4a;
+	}
+}
+
+
+#how-it-works{
+	min-height: 878px;
+	background: $brand-blue;
+	margin: 40px auto;
+	padding: 48px 0px;
+	color: #FFF;
+
+	@extend #process;
+	.descriptions{
+		.title{
+			color: #FFF;
+		}
+	}
+	.card{
+		color: #FFF;
+		background-color: transparent;
+		background: transparent;
+		img{
+			width: 86px;
+			height: 72px;
+			margin: 0 auto;
+		}
+	}
+	@include grid-divide(111px, 0px, 1px solid #FFF);
+	@media (min-width: 992px){
+		.container{
+			width: 75%;
+		}
+	}
+}
+
+#enroll{
+  	color: #4a4a4a;
+  	font-size: 16px;
+  	h5,h6{
+  		font-weight: 500;
+  	}
+  	.details{
+  		margin-bottom: 58px;
+  	}
+  	.details_title{
+  		font-size: 24px;
+  		font-weight: 500;
+  		margin-bottom: 24px;
+	}
+	.details_text{
+		text-align: left;
+	}
+	ul, li{
+		list-style-type: disc;
+	}
+	.media{
+		img{
+			width: 166px;
+			height: 185px;
+		}
+	}
+	.card{
+		border-radius: 3px;
+  		background-color: #f9f9f9;
+  		border: solid 0.5px #e1e1e1;
+  		box-shadow: none;
+  		margin-bottom: 48px;
+  		.starts, .ends, .address, .guides{
+  			margin-bottom: 24px;
+  			p{
+  				margin-bottom: 0px;
+  			}
+  		}
+	}
+	input[type=email].input-alternate{
+		background: #FFF;
+		box-sizing: border-box !important;
+	}
+	@media (min-width: 768px){
+		.row{
+			justify-content: space-between;
+		}
+		.col-md-3 {
+		    -webkit-box-flex: 0;
+		    -webkit-flex: 0 0 30%;
+		    -ms-flex: 0 0 30%;
+		    flex: 0 0 30%;
+		    max-width: 30%;
+		}
+	}
+}
+
+#courses{
+	@extend #process;
+	[class*='col-']{
+		.card{
+			padding-top: 16px;
+			padding-bottom: 5px;
+		}
+		&:not(:first-child){
+			padding-left: 0px;
+			.card{
+				border-left: 1px solid #E1E1E1;
+			}
+		}
+		&:not(:last-child){
+			padding-right: 0px;
+		}
+
+	}
+}
+
+#events{
+	@extend #courses;
+	[class*='col-']{
+		.card{
+			padding: 32px 120px;
+		}
+		&:not(:first-child){
+			.card{
+				border-right: 1px solid #E1E1E1;
+			}
+		}
+		&:not(:last-child){
+			.card{
+				border-left: 1px solid #E1E1E1;
+			}
+		}
+
+	}
+	#calendar{
+		margin-bottom: 88px;
+	}
+	.fc-day-grid-event{
+		text-align: center;
+	}
+	.details{
+		p{
+			font-size: 24px;
+  			text-align: center;
+  			color: #4a4a4a;
+		}
+		button{
+			width: 100%;
+			max-width: 313px;
+		}
+	}
+}
+
+
+#seniors{
+	@extend #enroll;
+	.details{
+		.job_title{
+			font-size: 32px;
+    		font-weight: 500;
+			margin-bottom: 24px;
+		}
+		.mail{
+			color: $brand-yellow;
+			font-weight: bold;
+		}
+		text-align: justify;
+		margin-bottom: 48px;
+	}
+	.container{
+		@media (min-width: 1200px){
+			width: 978px;
+			max-width: 100%;
+		}
+	}
+}
+
+#careers{
+	@extend #seniors;
+	.form-inline{
+		*{
+			width: 100%;
+		}
+		.md-form{
+			margin-bottom: 0px;
+			.form-control{
+				margin-top: 6px;
+				margin-bottom: 6px;
+				height: 40px;
+				box-sizing: border-box;
+			}
+			&:nth-child(1){
+				max-width: 263px;
+			}
+			&:nth-child(2){
+				max-width: 360px;
+			}	
+		}
+		button{
+			max-width: 144px;
+			height: 40px;
+		}
+	}
+	.positions{
+		padding: 48px 97px;
+		border: solid 0.5px #E1E1E1;
+		
+	}
+	.position{
+		margin-bottom: 54px;
+		h4{
+			color: $brand-blue;
+			font-weight: 500;
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		li{
+			list-style: none;
+			list-style-type: none;
+			font-size: 16px;
+			color: #4A4A4A;
+		}
+	}
+}
