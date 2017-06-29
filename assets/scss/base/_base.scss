@@ -62,3 +62,8 @@ input[type=password].input-alternate{
 		width: 60%;
 	}
 }
+@media(max-width: 768px){
+	.hidden-sm{
+		display: none;
+	}
+}

@@ -1,7 +1,6 @@
 body{
 	main{
-		padding-top: 88px;
-		padding-bottom: 120px;
+		padding-top: $section-gap;
 	}
 	&[data="dev"]{
 		main{
@@ -13,7 +12,13 @@ body{
 	}
 }
 
+// section gap uniform all through
+.section-gap{
+	margin-bottom: $section-gap;
+}
+
 #intro{
+	@extend .section-gap;
 	.container{
 		.thumbnail{
 			text-align: center;
@@ -28,6 +33,7 @@ body{
 }
 
 #process{
+	@extend .section-gap;
 	.card{
 		@include border-radius(0px);
 		box-shadow: none;
@@ -68,9 +74,9 @@ body{
 
 
 #how-it-works{
+	@extend .section-gap;
 	min-height: 878px;
 	background: $brand-blue;
-	margin: 40px auto;
 	padding: 48px 0px;
 	color: #FFF;
 
@@ -99,6 +105,7 @@ body{
 }
 
 #enroll{
+	@extend .section-gap;
   	color: #4a4a4a;
   	font-size: 16px;
   	h5,h6{
@@ -118,8 +125,11 @@ body{
 	.details_text{
 		text-align: left;
 	}
-	ul, li{
-		list-style-type: disc;
+	ul{
+		li{
+			list-style-type: disc;
+		}
+		padding-left: 20px;
 	}
 	.media{
 		img{
@@ -130,7 +140,7 @@ body{
 	.card{
 		border-radius: 3px;
   		background-color: #f9f9f9;
-  		border: solid 0.5px #e1e1e1;
+  		border: solid 0.5px $brand-grey;
   		box-shadow: none;
   		margin-bottom: 48px;
   		.starts, .ends, .address, .guides{
@@ -155,40 +165,58 @@ body{
 }
 
 #courses{
+	@extend .section-gap;
 	@extend #process;
 	[class*='col-']{
 		.card{
 			padding-top: 16px;
 			padding-bottom: 5px;
 		}
-		&:not(:first-child){
-			padding-left: 0px;
-			.card{
-				border-left: 1px solid #E1E1E1;
+		@media(min-width: 768px){
+			&:not(:first-child){
+			
+				padding-left: 0px;
+				.card{
+					border-left: 1px solid $brand-grey;
+				}
 			}
+			&:not(:last-child){
+				padding-right: 0px;
+			}		
 		}
-		&:not(:last-child){
-			padding-right: 0px;
-		}
-
 	}
 }
 
 #events{
+	@extend .section-gap;
 	@extend #courses;
 	[class*='col-']{
-		.card{
-			padding: 32px 120px;
-		}
-		&:not(:first-child){
-			.card{
-				border-right: 1px solid #E1E1E1;
+		@media(max-width: 425px){
+			&:not(:last-child){
+				.card{
+					border-bottom: 1px solid $brand-grey;
+				}
 			}
 		}
-		&:not(:last-child){
+		@media(min-width: 768px){
 			.card{
-				border-left: 1px solid #E1E1E1;
+				padding: 16px 60px;
 			}
+			&:not(:first-child){
+				.card{
+					border-right: 1px solid $brand-grey;
+				}
+			}
+			&:not(:last-child){
+				.card{
+					border-left: 1px solid $brand-grey;
+				}
+			}
+		}
+		@media(min-width: 1024px){
+			.card{
+				padding: 32px 120px;
+			}	
 		}
 
 	}
@@ -213,6 +241,7 @@ body{
 
 
 #seniors{
+	@extend .section-gap;
 	@extend #enroll;
 	.details{
 		.job_title{
@@ -236,6 +265,7 @@ body{
 }
 
 #careers{
+	@extend .section-gap;
 	@extend #seniors;
 	.form-inline{
 		*{
@@ -278,7 +308,7 @@ body{
 	}
 	.positions{
 		padding: 48px 97px;
-		border: solid 0.5px #E1E1E1;
+		border: solid 0.5px $brand-grey;
 		.headings{
 			font-size: 14px;
 			font-weight: 500;
@@ -314,7 +344,7 @@ body{
 			}
 			.form-control{
 				box-shadow: none !important;
-				border: solid 0.5px #E1E1E1;
+				border: solid 0.5px $brand-grey;
 			}
 			.md-form{
 				width: 100%;
@@ -331,7 +361,9 @@ body{
 				max-width: 361px;
 			}
 		}
-		
+		@media(max-width:425px){
+			padding: 10px 15px;
+		}
 	}
 	.position{
 		margin-bottom: 54px;
@@ -359,6 +391,7 @@ body{
 }
 
 #product{
+	@extend .section-gap;
 	@extend #enroll;
 	@extend #intro;
 	.card{
@@ -371,11 +404,12 @@ body{
 }
 
 #forms {
+	@extend .section-gap;
 	@extend #intro;
 	color: #FFF;
 	.form-control{
 		box-shadow: none !important;
-		border: 1px solid #E1E1E1 !important;
+		border: 1px solid $brand-grey !important;
 		margin-top: 0px;
 		margin-bottom: 12px;
 		background: #FFF;

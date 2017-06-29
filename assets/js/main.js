@@ -21,17 +21,19 @@ var app = {
 		    ],
 			eventColor: '#FECB3F',
 			eventTextColor: '#FFFFFF',
-		    // header: {
-		    // 	left: 'prev,next today',
-		    // 	center: 'title',
-		    // 	right: 'month,agendaWeek,agendaDay'
-		    // },
+		    header: {
+		    	left: 'prev,next today',
+		    	center: 'title',
+		    	right: 'month,agendaWeek,agendaDay'
+		    },
 		    //editable: true,
 		    //droppable: true,
 		    eventClick: function(calEvent, jsEvent, view) {
 
 		        alert('Event: ' + calEvent.title);
 		        //$(this).css('border-color', 'red');
+				//window.location = (calEvent.title).toLowerCase() + '.html';
+				window.location = 'meet_up.html'
 		    },
 			loading: function(isloading, view){
 				console.log(isloading);
