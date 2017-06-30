@@ -63,6 +63,7 @@ body{
   		text-align: center;
   		color: #4a4a4a;
   		margin-bottom: 64px;
+		font-family: $font-family;
 	}
 	p{
 		font-size: 16px;
@@ -404,7 +405,7 @@ body{
 }
 
 #forms {
-	@extend .section-gap;
+	// @extend .section-gap;
 	@extend #intro;
 	color: #FFF;
 	.form-control{
@@ -457,7 +458,6 @@ body{
 					padding-right: 5px;
 				}
 			}
-
 		}
 	}
 	.details{
@@ -471,5 +471,4 @@ body{
 			line-height: 1.33;
 		}
 	}
-	
 }
