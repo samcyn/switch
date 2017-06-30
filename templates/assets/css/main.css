@@ -29,39 +29,32 @@ a {
   outline: 0;
 }
 
-/* line 1, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
-body {
-  font-family: "HelveticaNeue";
-  font-size: 14px;
-  color: #4A4A4A;
-}
-
-/* line 7, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 2, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .min-h858 {
   min-height: 858px;
 }
 
-/* line 10, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 5, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .p-t-0 {
   padding-top: 0px !important;
 }
 
-/* line 13, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 8, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .p-b-0 {
   padding-bottom: 0px !important;
 }
 
-/* line 17, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 12, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .bg-white {
   background: #FFF !important;
 }
 
-/* line 21, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 16, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .c-yellow {
   color: #FECB3F !important;
 }
 
-/* line 25, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 20, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .overlay {
   position: absolute;
   top: 0px;
@@ -72,7 +65,7 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 36, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 31, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .form-control, #forms .form-control:hover, #forms .form-control:focus {
   padding: 0 15px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -82,14 +75,14 @@ body {
   border: none;
 }
 
-/* line 43, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 38, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 .form-control:focus, #forms .form-control:focus, .form-control:hover, #forms .form-control:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
   transition: none !important;
   outline: 0;
 }
 
-/* line 50, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+/* line 45, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
 input[type=email].input-alternate,
 input[type=text].input-alternate,
 input[type=password].input-alternate {
@@ -98,18 +91,18 @@ input[type=password].input-alternate {
 }
 
 @media (min-width: 992px) {
-  /* line 58, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+  /* line 53, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
   .m-t-83 {
     margin-top: 83px !important;
   }
-  /* line 61, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+  /* line 56, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
   .width-60p {
     width: 60%;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 66, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
+  /* line 61, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/base/_base.scss */
   .hidden-sm {
     display: none;
   }
@@ -1023,9 +1016,18 @@ footer .footer-body .container ul.icons li a {
   }
 }
 
-/* line 3, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/modules/_typography.scss */
+@font-face {
+  font-family: "Herveticanuea";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/helveticaneue.ttf") format("truetype");
+}
+
+/* line 5, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/modules/_typography.scss */
 body {
-  font-family: "Bellefair", serif;
+  font-family: "Herveticanuea", serif;
+  font-size: 14px;
+  color: #4A4A4A;
 }
 
 /* line 1, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/modules/_buttons.scss */

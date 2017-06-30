@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bellefair|Roboto');
 
+@include font-face(Herveticanuea, assets/helveticaneue, 500, normal, ttf);
+
 body{
-    font-family: $font-family2;
+    font-family: $font-family3;
+    font-size: 14px;
+	color: $brand-dark;
 }
