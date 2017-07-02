@@ -24,7 +24,7 @@ body{
 
 // section gap uniform all through
 .section-gap{
-	padding-bottom: $section-gap;
+	margin-bottom: $section-gap;
 }
 
 #intro{
@@ -523,6 +523,9 @@ body{
 			padding-bottom: 50px;
 		}
 	}
+	.descriptions{
+		margin-bottom: 24px;
+	}
 }
 #mvp_ad2{
 	@extend #courses;
@@ -536,5 +539,18 @@ body{
 	}
 	.descriptions .title, .card-title, a{
 		color: #FFF;
+	}
+	.card-title{
+		margin-bottom: 16px;
+	}
+	ul{
+		margin-top: 152px;
+	}
+	li{
+		text-align: center;
+		display: inline-block;
+		&:nth-child(2){
+			margin: 0 80px;
+		}
 	}
 }
