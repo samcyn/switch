@@ -185,7 +185,7 @@ input[type=password].input-alternate {
   src: url("../fonts/Cedarville_Cursive/Cedarville-Cursive.ttf") format("truetype");
 }
 
-/* line 16, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/modules/_typography.scss */
+/* line 14, C:/Users/USER/Documents/Repos/Switch2.0/templates/assets/scss/modules/_typography.scss */
 body {
   font-family: "Worksans", "serif";
   font-size: 14px;
