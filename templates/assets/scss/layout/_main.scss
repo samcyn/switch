@@ -10,7 +10,7 @@ body{
 			background-color: $brand-blue;
 			background-image: url(../../assets/img/backgrounds/form.png);
 			background-repeat: no-repeat;
-			background-position: fixed;
+			background-attachment: fixed;
 			min-height: 100vh;
 		}
 	}
