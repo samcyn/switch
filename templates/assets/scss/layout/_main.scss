@@ -7,14 +7,24 @@ body{
 			padding-top: 0px;
 			padding-bottom: 0px;
 			height: 100%;
-			background-color: #39526b;
+			background-color: $brand-blue;
+			background-image: url(../../assets/img/backgrounds/form.png);
+			background-repeat: no-repeat;
+			background-position: fixed;
+			min-height: 100vh;
+		}
+	}
+	&[data="mvp_ad"]{
+		main{
+			padding-top: 0px;
+			padding-bottom: 0px;
 		}
 	}
 }
 
 // section gap uniform all through
 .section-gap{
-	margin-bottom: $section-gap;
+	padding-bottom: $section-gap;
 }
 
 #intro{
@@ -470,5 +480,61 @@ body{
 			font-weight: 500;
 			line-height: 1.33;
 		}
+	}
+}
+
+#success{
+	@extend #forms;
+	color: $brand-dark;
+	.logo{
+		padding-bottom: 142px;
+		@media(max-width:425px){
+			padding-bottom: 71px;
+		}
+	}
+	.card{
+		width: 100%;
+		max-width: 361.2px;
+		margin: 0 auto;
+		position: relative;
+		&:before, &:after{
+			top: 99%;
+			right: 0;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-top: 30px solid #FFF;
+			border-right: 0 solid transparent;
+			border-bottom: 0 solid transparent;
+			border-left: 50px solid transparent;
+		}
+	}
+}
+
+#mvp_ad {
+	@extend #forms;
+	color: $brand-dark;
+	.logo{
+		padding-bottom: 100px;
+		@media(max-width:425px){
+			padding-bottom: 50px;
+		}
+	}
+}
+#mvp_ad2{
+	@extend #courses;
+	background: $brand-blue;
+	margin-bottom: 0;
+	padding: 80px 0;
+	color: #FFF;
+	.card{
+		background: transparent;
+		color: #FFF;
+	}
+	.descriptions .title, .card-title, a{
+		color: #FFF;
 	}
 }
