@@ -23,7 +23,7 @@
 
 		
 	</head>
-	<body>
+	<body data="careers">
 		<header>
 			<!--Navbar-->
 			<nav class="navbar navbar-toggleable-md navbar-light bg-white">
@@ -36,23 +36,61 @@
 			        </a>
 			        <div class="collapse navbar-collapse" id="navbarNav1">
 			            <ul class="navbar-nav mr-left">
-			                <li class="nav-item active">
-			                    <a class="nav-link">Hire Us <span class="sr-only">(current)</span></a>
-			                </li>
+			                <li class="nav-item dropdown">
+			                    <a  class="nav-link dropdown-toggle"  href="hire_us.html">
+									Hire Us 
+									<span class="sr-only">(current)</span> 
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">MVP</a></li>
+									<li><a href="#">Projects</a></li>
+								</ul>
+							</li>
 			                <li class="nav-item">
-			                    <a class="nav-link">Academy</a>
+			                    <a href="javascript:avoid(0);" class="nav-link">Academy</a>
 			                </li>
-			                <li class="nav-item">
-			                    <a class="nav-link">Fellowship</a>
+			                <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="fellowship.html">
+									Fellowship
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu lg-dropdown-width">
+									<li><a href="#">Frontend Development</a></li>
+									<li><a href="#">Backend Development</a></li>
+									<li><a href="#">Product Design</a></li>
+									<li><a href="#">Android Development</a></li>
+								</ul>
 			                </li>
-			                <li class="nav-item">
-			                    <a class="nav-link">Get Dev</a>
+			                <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle"  href="get-dev.html">
+									Get Dev
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu lg-dropdown-width">
+									<li><a href="#">Fulltime Developers</a></li>
+									<li><a href="#">Remote Developers</a></li>
+								</ul>
 			                </li>
-			                <li class="nav-item">
-			                    <a class="nav-link">Products</a>
+			                <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="products.html">
+									Products
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Lostrib</a></li>
+									<li><a href="#">YesIdo</a></li>
+								</ul>
 			                </li>
-			                <li class="nav-item">
-			                    <a class="nav-link">Switch</a>
+			                <li class="nav-item dropdown">
+			                    <a class="nav-link dropdown-toggle" href="javascript:avoid(0);">
+									Switch
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Careers</a></li>
+								</ul>
 			                </li>
 			            </ul>
 			        </div>
@@ -71,7 +109,7 @@
 						<form class="form-inline">
 							<label for="#">Lets help you get started</label>
 						  	<div class="form-group">
-							    <select class="form-control" placeholder="Hire us">
+							    <select class="form-control selectpicker" placeholder="Hire us">
 								    <option value="1">Option 1</option>
 								    <option value="2">Option 2</option>
 								    <option value="3">Option 3</option>
@@ -147,7 +185,6 @@
                                 </div>
                             </section>
 							
-							
 						</div>
 					</div>
 				</div>
@@ -174,8 +211,8 @@
 										<li>
 											<span>HIRE US</span>
 											<ul class="lists">
-												<li><a href="#">MVP</a></li>
-												<li><a href="#">Projects</a></li>
+												<li><a href="mvp.html">MVP</a></li>
+												<li><a href="projects.html">Projects</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -185,8 +222,8 @@
 										<li>
 											<span>Academy</span>
 											<ul class="lists">
-												<li><a href="#">MVP</a></li>
-												<li><a href="#">Projects</a></li>
+												<li><a href="mvp.html">MVP</a></li>
+												<li><a href="projects.html">Projects</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -196,10 +233,10 @@
 										<li>
 											<span>FELLOWSHIP</span>
 											<ul class="lists">
-												<li><a href="#">FRONTEND DEV</a></li>
-												<li><a href="#">BACKEND DEV</a></li>
-												<li><a href="#">PRODUCT DESIGN</a></li>
-												<li><a href="#">Android dev</a></li>
+												<li><a href="courses.html">FRONTEND DEV</a></li>
+												<li><a href="backend.html">BACKEND DEV</a></li>
+												<li><a href="design.html">PRODUCT DESIGN</a></li>
+												<li><a href="android.html">Android dev</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -222,7 +259,7 @@
 										<li>
 											<span>Get DEV</span>
 											<ul class="lists">
-												<li><a href="#">Full Time</a></li>
+												<li><a href="fulltime_developers.html">Full Time</a></li>
 												<li><a href="#">Part Time</a></li>
 											</ul>
 										</li>
@@ -233,10 +270,10 @@
 										<li>
 											<span>Switch</span>
 											<ul class="lists">
-												<li><a href="#">About us</a></li>
-												<li><a href="#">careers</a></li>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="careers.html">careers</a></li>
 												<li><a href="#">meet the team</a></li>
-												<li><a href="#">book a space</a></li>
+												<li><a href="booking.html">book a space</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -270,5 +307,11 @@
 		<script type="text/javascript" src="assets/plugins/mdb/js/bootstrap.min.js"></script>
 
 		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script>
+			$(document).ready(function(){
+				app.navbarHandler();
+				app.customSelect();
+			});
+		</script>
 	</body>
 </html>
